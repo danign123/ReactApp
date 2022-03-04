@@ -27,7 +27,7 @@ const initialState = {
   ],
 
   searchString: {searchString: ''}
-
+  
 };
 
 export default initialState;
