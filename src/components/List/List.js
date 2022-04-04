@@ -7,10 +7,11 @@ import { useParams } from 'react-router-dom';
 
 const List = () => {
   const { listId } = useParams()
-  const columns = useSelector(state => getColumnsByList(state, listId))
-  const listData = useSelector(state => getListById(state, listId))
+  const columns = useSelector(state => getColumnsByList(state, 1))
+  const listData = useSelector(state => getListById(state, 1))
 
-  console.log('listId', listId);
+  console.log('listData', listData);
+  console.log('columns', columns);
 
   return (
     <div className={styles.list}>
